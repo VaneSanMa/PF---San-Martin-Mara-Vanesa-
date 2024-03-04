@@ -1,6 +1,15 @@
 .navbar{
-    background-color: coral;
-    padding: 10px;
+    background-color: bisque;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+.navbar-brand{
+width: 80%;
+height: auto;    
+text-shadow: 30px #000 !important;
 }
 
 .nav-link{
@@ -8,6 +17,11 @@
 }
 .nav-link:hover{
     color:ghostwhite !important;
+    font-family: fantasy !important;
+}
+
+.nav-item{
+    font-size: 15px;
 }
 
 .navbar-toggler-icon{
@@ -15,6 +29,82 @@
 }
 
 .navbar-brand img{
-    height: 120px;
+    height: 150px;
 
+}
+
+body{
+    background-color: bisque;
+}
+
+.carousel slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%
+
+}
+.carousel-item {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+.carousel img{
+    width: 100%;
+    object-fit: cover;
+}
+
+h1{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.jumbotron{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/camera-820018_1280.jpg)
+    
+}
+.jumbotron p{
+    color: white;
+
+}
+h2{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.opinion{
+    border: 2px solid #000;
+    text-align: center;   
+}
+.opinion i{
+    margin-bottom: 20px;
+}
+
+video{
+    justify-content: center;
+    overflow: hidden;
+}
+
+footer{
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: bisque;
+    letter-spacing: 10px;
 }
