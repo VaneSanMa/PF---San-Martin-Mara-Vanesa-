@@ -1,5 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Kanit", sans-serif;
+}
+
 .navbar{
-    background-color: bisque;
+    background-color:darksalmon;
     border: 3px solid #000;
     box-sizing: border-box;
     padding: 0px;
@@ -30,7 +37,6 @@ text-shadow: 30px #000 !important;
 
 .navbar-brand img{
     height: 150px;
-
 }
 
 body{
@@ -43,8 +49,8 @@ body{
     justify-content: center;
     overflow: hidden;
     width: 80%
-
 }
+
 .carousel-item {
     width: 100%;
     height: auto;
@@ -63,23 +69,59 @@ h1{
     padding: 20px;
 }
 
-
 .jumbotron{
     height: 200px;
     background-size: cover;
     background-position: center;
-    background-image: url(img/camera-820018_1280.jpg)
-    
+    background-image: url(img/camera-820018_1280.jpg)   
 }
+
 .jumbotron p{
     color: white;
-
 }
+
 h2{
     color: white;
     background-color: black;
     text-align: center;
     padding: 20px;
+}
+
+
+.nleft-Vane{
+    background-image: url(img/Fotografa.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid #000;
+}
+
+.nright-Nico{
+    background-image: url(img/photographer-428388_640.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid #000;
+}
+
+.nleft-Tomás{
+    background-image: url(img/Fotografo\ Tomas.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid #000;
+}
+
+.nright-Leo{
+    background-image: url(img/editor.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid #000;
 }
 
 .opinion{
@@ -93,6 +135,49 @@ h2{
 video{
     justify-content: center;
     overflow: hidden;
+    width: 100%;
+}
+
+.servicios1{
+    height: 200px;
+    background-image: url(img/arquitectura.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.servicios2{
+    height: 200px;
+    background-image: url(img/football-1419954_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.servicios3{
+    height: 200px;
+    background-image: url(img/fiesta.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.servicios4{
+    height: 200px;
+    background-image: url(img/gastronomica.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.servicios5{
+    height: 200px;
+    background-image: url(img/food-3179853_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.servicios6{
+    height: 200px;
+    background-image: url(img/camera-549153_1280.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 footer{
