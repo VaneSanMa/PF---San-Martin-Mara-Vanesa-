@@ -1,195 +1,203 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-  font-family: "Kanit", sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 .navbar {
-  background-color: darksalmon;
-  border: 3px solid #000;
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0;
+    background-color: darksalmon;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
 }
 
 .navbar-brand {
-  width: 80%;
-  height: auto;
-  text-shadow: 30px #000 !important;
+    width: 80%;
+    height: auto;
+    text-shadow: 30px #000 !important;
 }
 
 .nav-link {
-  color: black !important;
+    color: black !important;
 
-  &:hover {
-    color: ghostwhite !important;
-    font-family: fantasy !important;
-  }
+    &:hover {
+        color: ghostwhite !important;
+        font-family: fantasy !important;
+    }
 }
 
 .nav-item {
-  font-size: 15px;
+    font-size: 20px;
 }
 
 .navbar-toggler-icon {
-  color: black;
+    color: black;
 }
 
 .navbar-brand img {
-  height: 150px;
+    height: 150px;
 }
 
 body {
-  background-color: bisque;
+    background-color: bisque;
 }
 
 .carousel slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
 }
 
 .carousel-item {
-  width: 100%;
-  height: auto;
-  margin: 5px;
+    width: 100%;
+    height: auto;
+    margin: 5px;
 }
 
-.carousel img {
-  width: 100%;
-  object-fit: cover;
+.carousel-item img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
 }
 
 h1 {
-  color: white;
-  background-color: black;
-  text-align: center;
-  padding: 20px;
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 .jumbotron {
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  background-image: url(img/camera-820018_1280.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/camera-820018_1280.jpg);
 
-  p {
-    color: white;
-  }
+    p {
+        height: 300px;
+        color: white;
+    }
 }
 
 h2 {
-  color: white;
-  background-color: black;
-  text-align: center;
-  padding: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
 }
 
 .nleft-Vane {
-  background-image: url(img/Fotografa.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  padding: 20px;
-  border: 3px solid #000;
+    background-image: url(img/Fotografa.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid #000;
 }
 
 .nright-Nico {
-  background-image: url(img/photographer-428388_640.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  padding: 20px;
-  border: 3px solid #000;
+    background-image: url(img/photographer-428388_640.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid #000;
 }
 
 .nleft-Tomás {
-  background-image: url(img/FotografoTomas.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  padding: 20px;
-  border: 3px solid #000;
+    background-image: url(img/FotografoTomas.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid #000;
 }
 
 .nright-Leo {
-  background-image: url(img/editor.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  padding: 20px;
-  border: 3px solid #000;
+    background-image: url(img/editor.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid #000;
 }
 
 .opinion {
-  border: 2px solid #000;
-  text-align: center;
+    border: 2px solid #000;
+    text-align: center;
 
-  i {
-    margin-bottom: 20px;
-  }
+    i {
+        margin-bottom: 20px;
+    }
 }
 
 video {
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
 }
 
 .servicios1 {
-  height: 200px;
-  background-image: url(img/arquitectura.jpg);
-  background-size: cover;
-  background-position: center;
+    background-image: url(img/arquitectura.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
 }
 
 .servicios2 {
-  height: 200px;
-  background-image: url(img/football-1419954_1280.jpg);
-  background-size: cover;
-  background-position: center;
+    @extend .servicios1;
+    background-image: url(img/football-1419954_1280.jpg);
 }
 
 .servicios3 {
-  height: 200px;
-  background-image: url(img/fiesta.jpg);
-  background-size: cover;
-  background-position: center;
+    @extend .servicios1;
+    background-image: url(img/fiesta.jpg);
 }
 
+
 .servicios4 {
-  height: 200px;
-  background-image: url(img/gastronomica.jpg);
-  background-size: cover;
-  background-position: center;
+    @extend .servicios1;
+    background-image: url(img/gastronomica.jpg);
 }
 
 .servicios5 {
-  height: 200px;
-  background-image: url(img/food-3179853_1280.jpg);
-  background-size: cover;
-  background-position: center;
+    @extend .servicios1;
+    background-image: url(img/food-3179853_1280.jpg);
 }
 
 .servicios6 {
-  height: 200px;
-  background-image: url(img/camera-549153_1280.jpg);
-  background-size: cover;
-  background-position: center;
+    @extend .servicios1;
+    background-image: url(img/camera-549153_1280.jpg);
 }
 
 footer {
-  background-color: #000;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
 
-  a {
-    text-decoration: none;
-    color: bisque;
-    letter-spacing: 10px;
-  }
+    a {
+        text-decoration: none;
+        color: bisque;
+        letter-spacing: 10px;
+    }
 }

@@ -27,7 +27,7 @@
 }
 
 .nav-item {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .navbar-toggler-icon {
@@ -56,10 +56,10 @@ body {
   margin: 5px;
 }
 
-.carousel img {
+.carousel-item img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 550px;
+  object-fit: cover;
 }
 
 h1 {
@@ -67,6 +67,19 @@ h1 {
   background-color: black;
   text-align: center;
   padding: 20px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .jumbotron {
@@ -76,6 +89,7 @@ h1 {
   background-image: url(img/camera-820018_1280.jpg);
 }
 .jumbotron p {
+  height: 300px;
   color: white;
 }
 
@@ -136,46 +150,31 @@ video {
   width: 100%;
 }
 
-.servicios1 {
-  height: 200px;
+.servicios1, .servicios6, .servicios5, .servicios4, .servicios3, .servicios2 {
   background-image: url(img/arquitectura.jpg);
+  height: 200px;
   background-size: cover;
   background-position: center;
 }
 
 .servicios2 {
-  height: 200px;
   background-image: url(img/football-1419954_1280.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .servicios3 {
-  height: 200px;
   background-image: url(img/fiesta.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .servicios4 {
-  height: 200px;
   background-image: url(img/gastronomica.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .servicios5 {
-  height: 200px;
   background-image: url(img/food-3179853_1280.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .servicios6 {
-  height: 200px;
   background-image: url(img/camera-549153_1280.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 footer {
@@ -189,4 +188,6 @@ footer a {
   text-decoration: none;
   color: bisque;
   letter-spacing: 10px;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
