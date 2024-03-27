@@ -41,6 +41,8 @@
 
 body {
     background-color: bisque;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .carousel slide {
@@ -143,6 +145,8 @@ h2 {
 .opinion {
     border: 2px solid #000;
     text-align: center;
+    width: 100vw;
+    overflow-x: hidden;
 
     i {
         margin-bottom: 20px;
