@@ -4,8 +4,13 @@
     font-family: "Kanit", sans-serif;
 }
 
+$micolor1: #8e8b63;
+$micolor2: #cb8587;
+$micolor3: #d6d4ad;
+$micolor4: #eddada;
+
 .navbar {
-    background-color: darksalmon;
+    background-color: $micolor2;
     border: 3px solid #000;
     box-sizing: border-box;
     padding: 0px;
@@ -40,7 +45,9 @@
 }
 
 body {
-    background-color: bisque;
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient($micolor2, $micolor3, $micolor4);
 }
 
 .carousel slide {
@@ -110,7 +117,7 @@ h2 {
     background-position: center;
     height: 200px;
     padding: 20px;
-    border: 3px solid #000;
+    border: 10px solid white;
 }
 
 .nright-Nico {
@@ -135,8 +142,8 @@ h2 {
     background-image: url(img/editor.jpg);
     background-size: cover;
     background-position: center;
-    height: 200px;
-    padding: 20px;
+    height: 20px;
+    padding: 200px;
     border: 3px solid #000;
 }
 
@@ -150,9 +157,12 @@ h2 {
 }
 
 video {
-    justify-content: center;
     overflow: hidden;
     width: 100%;
+    background-position: center;
+    height: auto;
+    padding: 20px;
+    border: 3px solid #000;
 }
 
 .servicios1 {
@@ -186,6 +196,38 @@ video {
 .servicios6 {
     @extend .servicios1;
     background-image: url(img/camera-549153_1280.jpg);
+}
+
+
+.contenedor{
+    min-height: 600px;
+    width: 100%;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+}
+
+.item{
+    border: 2px solid #000;
+    background-image: url(img/img1.jpg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s;
+}
+.item:hover{
+    background-size: 100%;
+}
+
+
+
+@for $i from 1 through 9 {
+    .item#{$i} {
+        background-color: lighten($micolor1, $i * 2%);
+        background-image: url(img/img#{$i}.jpg);
+        
+    }
 }
 
 footer {
