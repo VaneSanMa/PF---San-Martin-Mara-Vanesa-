@@ -13,7 +13,7 @@ $micolor4: #eddada;
     background-color: $micolor2;
     border: 3px solid #000;
     box-sizing: border-box;
-    padding: 0px;
+    padding: 0;
     margin: 0;
 }
 
@@ -45,9 +45,11 @@ $micolor4: #eddada;
 }
 
 body {
-    background-color: bisque;
+    background-color: $micolor4;
     width: 100vw;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .carousel slide {
@@ -66,9 +68,10 @@ body {
 
 .carousel-item img {
     width: 100%;
-    height: 550px;
+    height: 400px;
     object-fit: cover;
 }
+
 
 h1 {
     @keyframes aparecer {
@@ -81,136 +84,139 @@ h1 {
         }
     }
 
-    color: white;
+    color: $micolor1;
     background-color: black;
     text-align: center;
     padding: 20px;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-name: aparecer;
-    animation-delay: 5s;
+    animation-delay: 8s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
 .jumbotron {
+    background-color: $micolor1 !important;
     height: 200px;
     background-size: cover;
     background-position: center;
-    background-image: url(img/camera-820018_1280.jpg);
+    
 
     p {
         height: 300px;
-        color: white;
+        color:black
     }
 }
 
 h2 {
-    color: $micolor1;
+    color: $micolor2;
     background-color: black;
     text-align: center;
     padding: 20px;
 }
 
-.nleft-Vane {
-    background-image: url(img/Fotografa.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    padding: 20px;
-    border: 10px solid white;
+.container {
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .servicios-item {
+            display: flex;
+            align-items: center;
+
+            .img-serv {
+                max-width: 50%;
+                position: relative;
+                width: 100%;
+            }
+
+            .servicios-info {
+                max-width: 45%;
+                padding: 0 20px;
+            }
+        }
+    }
 }
 
-.nright-Nico {
-    background-image: url(img/photographer-428388_640.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    padding: 20px;
-    border: 10px solid white;
+.fotografos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.nleft-Tomás {
-    background-image: url(img/FotografoTomas.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    padding: 20px;
-    border: 3px solid #000;
+.fotografo {
+    width: 300px;
+    margin-bottom: 30px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info {
+        text-align: center;
+        margin-top: 10px;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+    }
 }
 
-.nright-Leo {
-    background-image: url(img/editor.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 20px;
-    padding: 200px;
-    border: 3px solid #000;
-}
 
 .opinion {
     border: 2px solid #000;
     text-align: center;
     width: 100vw;
     overflow-x: hidden;
+    
 
     i {
         margin-bottom: 20px;
     }
 }
 
-video {
-    overflow: hidden;
-    width: 100%;
-    background-position: center;
-    height: auto;
-    padding: 20px;
-    border: 3px solid #000;
-}
 
-.servicios1 {
-    background-image: url(img/arquitectura.jpg);
+
+.container {
     height: 200px;
     background-size: cover;
     background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-
-.servicios2 {
-    @extend .servicios1;
-    background-image: url(img/football-1419954_1280.jpg);
-}
-
-.servicios3 {
-    @extend .servicios1;
-    background-image: url(img/fiesta.jpg);
-    
-}
-
-
-.servicios4 {
-    @extend .servicios1;
-    background-image: url(img/gastronomica.jpg);
-}
-
-.servicios5 {
-    @extend .servicios1;
-    background-image: url(img/food-3179853_1280.jpg);
-}
-
-.servicios6 {
-    @extend .servicios1;
-    background-image: url(img/camera-549153_1280.jpg);
-}
-
-
 .contenedor{
     min-height: 600px;
     width: 100%;
-    background-color: aqua;
+    background-color: $micolor2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(5, 200px);
+}
+.btn{
+    background-color: $micolor1;
+}
+.servicios-info{
+    margin-bottom: 20px;
+    max-width: 50%;
+    text-align: center;
+    
 }
 
+.img-serv {
+    max-width: 50%;
+  
+    margin-bottom: 20px; 
+    border: 3px solid $micolor1;
+}
 .item{
     border: 2px solid #000;
     background-image: url(img/img1.jpg);
@@ -223,26 +229,38 @@ video {
     background-size: 100%;
 }
 
+.video-container {
+    max-width: 100px; 
+    max-height: 100px; 
+    overflow: hidden; 
+    margin: auto;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
 
 
-@for $i from 1 through 9 {
+@for $i from 1 through 15 {
     .item#{$i} {
-        background-color: lighten($micolor1, $i * 2%);
+        background-color: lighten($micolor1, $i * 1%);
         background-image: url(img/img#{$i}.jpg);
         
     }
 }
 
 footer {
-    background-color: #000;
-    color: white;
+    
+    background-size: 100%;
+    color: black;
     text-align: center;
     padding: 20px;
     font-size: 20px;
+    width: 100%;
+    overflow-x: hidden;
 
     a {
         text-decoration: none;
-        color: bisque;
+        color: $micolor2;
         letter-spacing: 10px;
     }
 }

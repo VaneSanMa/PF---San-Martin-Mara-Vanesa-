@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   font-family: "Kanit", sans-serif;
@@ -8,7 +7,7 @@
   background-color: #cb8587;
   border: 3px solid #000;
   box-sizing: border-box;
-  padding: 0px;
+  padding: 0;
   margin: 0;
 }
 
@@ -39,9 +38,11 @@
 }
 
 body {
+  background-color: #eddada;
   width: 100vw;
   overflow-x: hidden;
-  background: linear-gradient(#cb8587, #d6d4ad, #eddada);
+  margin: 0;
+  padding: 0;
 }
 
 .carousel slide {
@@ -60,18 +61,18 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: 550px;
+  height: 400px;
   object-fit: cover;
 }
 
 h1 {
-  color: white;
+  color: #8e8b63;
   background-color: black;
   text-align: center;
   padding: 20px;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: aparecer;
-  animation-delay: 5s;
+  animation-delay: 8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
@@ -85,110 +86,110 @@ h1 {
 }
 
 .jumbotron {
+  background-color: #8e8b63 !important;
   height: 200px;
   background-size: cover;
   background-position: center;
-  background-image: url(img/camera-820018_1280.jpg);
 }
 .jumbotron p {
   height: 300px;
-  color: white;
+  color: black;
 }
 
 h2 {
-  color: white;
+  color: #cb8587;
   background-color: black;
   text-align: center;
   padding: 20px;
 }
 
-.nleft-Vane {
-  background-image: url(img/Fotografa.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  padding: 20px;
-  border: 10px solid white;
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .row .servicios-item {
+  display: flex;
+  align-items: center;
+}
+.container .row .servicios-item .img-serv {
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+}
+.container .row .servicios-item .servicios-info {
+  max-width: 45%;
+  padding: 0 20px;
 }
 
-.nright-Nico {
-  background-image: url(img/photographer-428388_640.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  padding: 20px;
-  border: 3px solid #000;
+.fotografos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.nleft-Tomás {
-  background-image: url(img/FotografoTomas.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  padding: 20px;
-  border: 3px solid #000;
+.fotografo {
+  width: 300px;
+  margin-bottom: 30px;
 }
-
-.nright-Leo {
-  background-image: url(img/editor.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 20px;
-  padding: 200px;
-  border: 3px solid #000;
+.fotografo img {
+  max-width: 100%;
+  height: auto;
+}
+.fotografo .info {
+  text-align: center;
+  margin-top: 10px;
+}
+.fotografo .info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.fotografo .info p {
+  font-size: 1rem;
+  color: #666;
 }
 
 .opinion {
   border: 2px solid #000;
   text-align: center;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .opinion i {
   margin-bottom: 20px;
 }
 
-video {
-  overflow: hidden;
-  width: 100%;
-  background-position: center;
-  height: auto;
-  padding: 20px;
-  border: 3px solid #000;
-}
-
-.servicios1, .servicios6, .servicios5, .servicios4, .servicios3, .servicios2 {
-  background-image: url(img/arquitectura.jpg);
+.container {
   height: 200px;
   background-size: cover;
   background-position: center;
-}
-
-.servicios2 {
-  background-image: url(img/football-1419954_1280.jpg);
-}
-
-.servicios3 {
-  background-image: url(img/fiesta.jpg);
-}
-
-.servicios4 {
-  background-image: url(img/gastronomica.jpg);
-}
-
-.servicios5 {
-  background-image: url(img/food-3179853_1280.jpg);
-}
-
-.servicios6 {
-  background-image: url(img/camera-549153_1280.jpg);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .contenedor {
   min-height: 600px;
   width: 100%;
-  background-color: aqua;
+  background-color: #cb8587;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(5, 200px);
+}
+
+.btn {
+  background-color: #8e8b63;
+}
+
+.servicios-info {
+  margin-bottom: 20px;
+  max-width: 50%;
+  text-align: center;
+}
+
+.img-serv {
+  max-width: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #8e8b63;
 }
 
 .item {
@@ -204,61 +205,103 @@ video {
   background-size: 100%;
 }
 
+.video-container {
+  max-width: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
 .item1 {
-  background-color: #949167;
+  background-color: #918e65;
   background-image: url(img/img1.jpg);
 }
 
 .item2 {
-  background-color: #99966d;
+  background-color: #949167;
   background-image: url(img/img2.jpg);
 }
 
 .item3 {
-  background-color: #9d9a73;
+  background-color: #97946a;
   background-image: url(img/img3.jpg);
 }
 
 .item4 {
-  background-color: #a19e79;
+  background-color: #99966d;
   background-image: url(img/img4.jpg);
 }
 
 .item5 {
-  background-color: #a5a37f;
+  background-color: #9b9870;
   background-image: url(img/img5.jpg);
 }
 
 .item6 {
-  background-color: #aaa785;
+  background-color: #9d9a73;
   background-image: url(img/img6.jpg);
 }
 
 .item7 {
-  background-color: #aeab8b;
+  background-color: #9f9c76;
   background-image: url(img/img7.jpg);
 }
 
 .item8 {
-  background-color: #b2b091;
+  background-color: #a19e79;
   background-image: url(img/img8.jpg);
 }
 
 .item9 {
-  background-color: #b6b497;
+  background-color: #a3a17c;
   background-image: url(img/img9.jpg);
 }
 
+.item10 {
+  background-color: #a5a37f;
+  background-image: url(img/img10.jpg);
+}
+
+.item11 {
+  background-color: #a8a582;
+  background-image: url(img/img11.jpg);
+}
+
+.item12 {
+  background-color: #aaa785;
+  background-image: url(img/img12.jpg);
+}
+
+.item13 {
+  background-color: #aca988;
+  background-image: url(img/img13.jpg);
+}
+
+.item14 {
+  background-color: #aeab8b;
+  background-image: url(img/img14.jpg);
+}
+
+.item15 {
+  background-color: #b0ae8e;
+  background-image: url(img/img15.jpg);
+}
+
 footer {
-  background-color: #000;
-  color: white;
+  background-size: 100%;
+  color: black;
   text-align: center;
   padding: 20px;
   font-size: 20px;
+  width: 100%;
+  overflow-x: hidden;
 }
 footer a {
   text-decoration: none;
-  color: bisque;
+  color: #cb8587;
   letter-spacing: 10px;
 }
 
